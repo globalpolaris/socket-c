@@ -68,7 +68,7 @@ int main(int argc, char *argv[]) {
     }
     buf[numbytes] = '\0';
     printf("client: recieved: '%s'\n", buf);
-    close(sockfd);
+//    close(sockfd);
     return 0;
 }
 

@@ -105,7 +105,7 @@ int main(void) {
 
         if(!fork()) {
             close(sockfd);
-            if(send(new_fd, "Hello, World!", 13, 0) == -1)
+            if(send(new_fd, "Hello, World!123", 16, 0) == -1)
                 perror("send");
             close(new_fd);
             exit(0);
